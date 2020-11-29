@@ -1,0 +1,9 @@
+<form action="{{ url_for('new_package') }}" method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.sender_name.label }} {{ form.sender_name }}
+    {{ form.receiver_name.label }} {{ form.receiver_name }}
+    {{ form.origin.label }} {{ form.origin }}
+    {{ form.destination.label }} {{ form.destination }}
+    {{ form.submit }}
+    {{ form.cancel }}
+</form>
