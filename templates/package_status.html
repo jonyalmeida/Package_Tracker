@@ -1,0 +1,17 @@
+<a href='/new_package'>New Package</a>
+
+{% if packages %}
+
+    {% for package in packages %}
+    <ul>
+        <li>Package ID#: {{ package.id }}</li>
+        <li>Sender: {{ package.sender }}</li>
+        <li>Recipient: {{ package.recipient }}</li>
+        <li>Origin: {{ package.origin }}</li>
+        <li>Destination: {{ package.destination }}</li>
+        <li>Location: {{ package.location }}</li>
+        
+    </ul>
+    {% endfor %}
+
+{% endif %}
